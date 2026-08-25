@@ -1,4 +1,4 @@
-#include <soumya-talwar-project-1_inferencing.h>
+#include <eek_inferencing.h>
 #include <ESP_I2S.h>
 #include <string.h>
 #define EI_CLASSIFIER_TFLITE_ENABLE_ESP_NN 1
@@ -75,8 +75,8 @@ void loop()
     }
 
     for (size_t i = 0; i < EI_CLASSIFIER_LABEL_COUNT; i++) {
-        if (strcmp(result.classification[i].label, "marriage") == 0 && result.classification[i].value > 0.3) {
-            Serial.println("MARRIAGE!");
+        if (strcmp(result.classification[i].label, "trigger") == 0 && result.classification[i].value > 0.5) {
+            Serial.println("TRIGGERED!");
         }
     }
 
