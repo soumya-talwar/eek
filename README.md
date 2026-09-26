@@ -82,4 +82,4 @@ The repository includes the source audio and the files used to prepare it for th
 
 A small, standalone object that combines **embedded machine learning, real-time audio classification and physical interaction** into one very specific purpose:
 
-**protecting its wearer from marriage talk.**
+_protecting its wearer from marriage talk._
